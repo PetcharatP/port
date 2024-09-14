@@ -1,0 +1,501 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+.hero-header{
+    width:100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222;
+}
+.wrapper{
+    width:1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 45px;
+    width:45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.logo .logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color:#fff;
+}
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top:45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+    display: block;
+    background-color: #007ced;
+    margin: 5px 0px;
+    width:100%;
+    height:3px;
+    transition: 0.3s;
+    transition-property:  transform, opacity;
+
+}
+nav .navlinks{
+    list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+     color:#e5e5e5;
+     margin-right: 2.5rem;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:4rem;
+}
+.container .hero-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+.hero-pic img{
+    height: 100%;
+    width:100%;
+    transition: 0.5s;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+.hero-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text h5{
+    color:#e5e5e5;
+    font-size: 14px;
+}
+.hero-text h5 span{
+    color:#007ced;
+    font-size: 16px;
+}
+.hero-text h1{
+    color: #007ced;
+    font-size: 3rem;
+}
+.hero-text p{
+    color:#e5e5e5;
+
+}
+.btn-group{
+    margin:45px 0;
+}
+.btn-group .btn{
+    border-color: #d5d5d5;
+    color:#fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right:7px;
+    border-radius: 30px;
+    border:2px solid #e5e5e5;
+    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+.btn.active{
+    border-color: #007ced;
+}
+.hero-text .social i{
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.hero-text .social i:hover{
+    color:#007ced;
+    transform: rotate(360deg);
+}
+/* Respnosiv design & displaying navbar for small screen */
+@media(max-width:930px)
+{
+    nav .togglebtn{
+        display: initial;
+    }
+    /* for toggle button**/
+    .click {
+        top:45px;
+    }
+    .click span{
+        position: absolute;
+        margin-top:12px
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2)
+    {
+        opacity: 0;
+        margin:0;
+    }
+    .click span:last-child{
+        transform: rotate(45deg);
+        top:0;
+    }
+    nav .navlinks{
+        position: absolute;
+        top:110px;
+        right:-100%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .navlinks li{
+        display: block;
+    }
+    nav .navlinks li a{
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    nav .navlinks.open{
+        right:0;
+    }
+}
+@media(max-width:768px)
+{
+    .container{
+        flex-direction: column;
+        padding-top:2rem
+    }
+    .hero-text{
+        padding:40px 0px;
+    }
+}
+/* Skills section styling to match the main page */
+.skills {
+    padding: 20px;
+    background-color: #222; /* Match the hero header background */
+    color: #e5e5e5; /* Same text color as the main page */
+}
+
+.skills__content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Align content like in the main section */
+}
+
+.skills__content-wrapper__inner-content {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #444; /* Match the border style with the hero section */
+    border-radius: 8px;
+    background-color: #333; /* Darker background to contrast with text */
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78); /* Match box-shadow of buttons */
+}
+
+.skills__content-wrapper__inner-content__category-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007ced; /* Same blue as the hero text */
+}
+
+.progressbar-wrapper {
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 100%;
+    background-color: #f3f3f3;
+    height: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+    position: relative;
+}
+
+.progress {
+    display: block;
+    height: 100%;
+    background-color: #21cbff;
+    width: 0%;
+    border-radius: 5px;
+    transition: width 2s ease-in-out;
+}
+
+/* Animation */
+.animate {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 1s ease-in-out;
+}
+
+.animate.play {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/* Responsive adjustments to match other sections */
+@media(max-width: 930px) {
+    .skills__content-wrapper__inner-content {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media(max-width: 768px) {
+    .skills__content-wrapper {
+        flex-direction: column; /* Stack skills on small screens */
+    }
+}
+.port {
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+.page-header-content h1 {
+    text-align: center;
+    color: #007ced;
+    margin-bottom: 20px;
+}
+
+.portfolio-container details summary {
+    background-color: #333; /* ปรับสีพื้นหลังของปุ่ม */
+    border-radius: 8px; /* ปรับมุมของปุ่ม */
+    padding: 10px; /* ปรับขนาดของปุ่ม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ที่ปุ่ม */
+    width: fit-content; /* ปรับขนาดของปุ่มให้พอดีกับเนื้อหา */
+    margin-bottom: 15px;
+}
+
+.portfolio-container summary {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #007ced;
+    padding: 10px;
+}
+
+.portfolio-container summary:hover {
+    color: #fff;
+}
+
+.portfolio-container .portfolio-content {
+    padding: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #007ced;
+}
+
+.project {
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.project p {
+    font-size: 14px;
+    color: #ccc;
+}
+.project h5 {
+    font-size: 14px;
+    color: #f0f0f0;
+}
+.project-image {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.link {
+    color: #00eeff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+/* Resume Section Styles */
+.resume {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.page-header-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.resume-subtitle {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.resume-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resume-summary,
+.resume-timeline,
+.resume-education {
+    margin-bottom: 30px;
+}
+
+.resume-summary h2,
+.resume-timeline h2,
+.resume-education h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.resume-timeline ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-timeline li {
+    margin-bottom: 20px;
+}
+
+.resume-timeline h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.resume-timeline p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.resume-download {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+/* Contact Section Styles */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.contact-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+
+.page-header-content {
+    margin-bottom: 30px;
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-content li {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.contact-content i {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-right: 15px;
+}
+
+.contact-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
+}
+
