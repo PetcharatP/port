@@ -4,370 +4,933 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Website </title>
-    <link rel="stylesheet" href="style.css">
-    <!----Font awesome cdn  font icon css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>REVENTHAN.EXE - Cybersecurity Specialist | The Matrix Portfolio</title>
+    <link rel="stylesheet" href="style-new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
+    <!-- Advanced Matrix Background Effects (TikTok Style) -->
+    <div class="matrix-bg"></div>
+    <div class="scan-lines"></div>
+    
+    <!-- Floating Code Particles -->
+    <div class="code-particles">
+        <div class="particle">01001000</div>
+        <div class="part        }
+        
+        // Initialize all effects when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initScrollAnimations();
+            initCleanProgressBars();
+            initTypingAnimations();
+            initMatrixDecoding(); // Add matrix decoding effect
+            initEnhancedEffects();
+            createMatrixRain();
+            
+            // Typing animation for main title
+            typeWriter(document.querySelector('.hero h1'), document.querySelector('.hero h1').textContent, 100);
+        });
+
+        .skill-category:hover {div>
+        <div class="particle">console.log</div>
+        <div class="particle">matrix.exe</div>
+    </div>
+    
+    <!-- Digital Rain Columns - Reduced -->
+    <div class="digital-rain">
+        <div class="rain-column" style="left: 15%; animation-delay: 0s;">10110011</div>
+        <div class="rain-column" style="left: 45%; animation-delay: 4s;">01011100</div>
+        <div class="rain-column" style="left: 75%; animation-delay: 2s;">11001010</div>
+    </div>
+    
+    <!-- Cyber Grid Overlay -->
+    <div class="cyber-grid"></div>
+    
+    <!-- Hero Section -->
     <div class="hero-header">
         <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-p"></i>
-                    <div class="logo-text">Petcharat P.</div>
-                </div>
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+            <!-- Terminal-style Header -->
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <div class="terminal-button"></div>
+                        <div class="terminal-button"></div>
+                        <div class="terminal-button"></div>
                     </div>
-                    <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#port">Portfolio</a></li>
-                        <li><a href="#resume">Resume</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#certificates">Certificates</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="container">
-                <div class="hero-pic">
-                    <img src="images/main.jpg" alt="profile pic">
+                    <div class="terminal-title matrix-decode">REVENTHAN@matrix:~$</div>
                 </div>
+                <div class="terminal-content">
+                    <header>
+                        <div class="logo">
+                            <i class="fas fa-terminal"></i>
+                            <div class="logo-text matrix-decode">REVENTHAN</div>
+                        </div>
+                        <nav>
+                            <div class="togglebtn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <ul>
+                                <li><a href="#home" class="matrix-decode">HOME</a></li>
+                                <li><a href="#portfolio" class="matrix-decode">PORTFOLIO</a></li>
+                                <li><a href="#resume" class="matrix-decode">RESUME</a></li>
+                                <li><a href="#skills" class="matrix-decode">SKILLS</a></li>
+                                <li><a href="#certs" class="matrix-decode">CERTS</a></li>
+                                <li><a href="#contact" class="matrix-decode">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+
+            <!-- Main Hero Content -->
+            <div class="hero-content">
                 <div class="hero-text">
-                    <h5>Hi I'm <span class="input">Fullstack Developer</span></h5>
-                    <h1>Reventhan</h1>
-                    <p>I am a student specializing in web and program development, focusing on creating dynamic and responsive web applications. I am proficient in technologies like Python, Node.js, React, HTML, JavaScript, and CSS. Currently seeking new challenges and opportunities to further develop my skills and gain experience in the web development field.</p>
-
-                    <div class="btn-group">
-                        <a href="#skills" class="btn active">Look my skills</a>
-                        <a href="#contact" class="btn">Contact</a>
+                    <h1 class="matrix-decode">REVENTHAN</h1>
+                    <div class="tagline matrix-decode" id="typed-text"></div>
+                    <p>
+                        SYSTEM BREACH DETECTED... INITIALIZING SECURITY PROTOCOLS...<br>
+                        <strong>ELITE CYBERSECURITY SPECIALIST</strong> specialized in secure application development, 
+                        digital forensics, and advanced threat mitigation. Expert in Python automation, 
+                        Node.js/React applications, and Security Operations Center (SOC) analysis.
+                        <br><br>
+                        <span>Currently deployed in protecting digital infrastructure and developing 
+                        secure solutions against modern cyber threats. The Matrix has you...</span>
+                    </p>
+                    
+                    <div style="margin: 30px 0;">
+                        <a href="#portfolio" class="btn matrix-decode">ENTER_THE_MATRIX</a>
+                        <a href="#contact" class="btn secondary">ESTABLISH_LINK</a>
                     </div>
 
+                    <!-- Enhanced Social Media -->
                     <div class="social">
-                        <a href="https://web.facebook.com/ven.petcahrat"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.tiktok.com/@lanzelotreviatino"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://www.instagram.com/ven_petcharxt/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://discord.com/users/reventhan"><i class="fa-brands fa-discord"></i></a>
-                        <a href="https://line.me/ti/p/BS2bw_2bAW"><i class="fa-brands fa-line"></i></a>
+                        <a href="https://web.facebook.com/ven.petcahrat" title="Facebook Protocol" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@lanzelotreviatino" title="TikTok Matrix" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ven_petcharxt/" title="Instagram Feed" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://discord.com/users/reventhan" title="Discord Channel" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://line.me/ti/p/BS2bw_2bAW" title="Line Network" aria-label="Line">
+                            <i class="fab fa-line"></i>
+                        </a>
+                        <a href="https://github.com/reventhan" title="GitHub Repository" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/reventhan" title="LinkedIn Network" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Image with Matrix Effect -->
+                <div class="hero-img">
+                    <img src="images/main.jpg" alt="Reventhan - Cybersecurity Specialist">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Terminal Windows for Content Sections -->
+    <div class="wrapper">
+        <!-- Portfolio Terminal -->
+        <div class="terminal-window scroll-reveal-left" id="portfolio">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button"></div>
+                </div>
+                <div class="terminal-title">portfolio.exe --load</div>
+            </div>
+            <div class="terminal-content">
+                <h2 style="color: var(--matrix-green); font-family: 'Orbitron', monospace; margin-bottom: 20px;" class="typing-text">
+                    <i class="fas fa-folder-open"></i> PROJECT DATABASE LOADED
+                </h2>
+                
+                <!-- Dropdown 1 -->
+                <details style="margin: 20px 0; border: 1px solid var(--matrix-green); border-radius: 5px; background: rgba(0, 255, 65, 0.05);">
+                    <summary style="padding: 15px; color: var(--cyber-blue); cursor: pointer; font-weight: bold;">
+                        <i class="fas fa-globe"></i> Web Development Projects
+                    </summary>
+                    <div style="padding: 20px;">
+                        <div style="border: 1px solid var(--matrix-dark-green); border-radius: 10px; padding: 20px; background: rgba(0, 0, 0, 0.3);">
+                            <h3 style="color: var(--matrix-green); margin-bottom: 15px;">Project 1: Webshop for Minecraft server</h3>
+                            <img src="images/p5.jpg" alt="Webshop for Minecraft server" style="width: 100%; max-width: 400px; height: auto; border-radius: 5px; margin: 15px 0; border: 1px solid var(--matrix-green);">
+                            <p style="color: var(--matrix-light-green); line-height: 1.6;">The Webshop for minecraft server - Complete e-commerce solution for gaming communities.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Dropdown 2 -->
+                <details style="margin: 20px 0; border: 1px solid var(--matrix-green); border-radius: 5px; background: rgba(0, 255, 65, 0.05);">
+                    <summary style="padding: 15px; color: var(--cyber-blue); cursor: pointer; font-weight: bold;">
+                        <i class="fas fa-robot"></i> Program Development Projects
+                    </summary>
+                    <div style="padding: 20px;">
+                        <div style="border: 1px solid var(--matrix-dark-green); border-radius: 10px; padding: 20px; background: rgba(0, 0, 0, 0.3);">
+                            <h3 style="color: var(--matrix-green); margin-bottom: 15px;">Project 1: Bot Web Scraper</h3>
+                            <img src="images/P1.jpg" alt="Bot Web Scraper" style="width: 100%; max-width: 400px; height: auto; border-radius: 5px; margin: 15px 0; border: 1px solid var(--matrix-green);">
+                            <p style="color: var(--matrix-light-green); line-height: 1.6;">Advanced automated web scraping bot with intelligent data extraction capabilities.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Dropdown 3 -->
+                <details style="margin: 20px 0; border: 1px solid var(--matrix-green); border-radius: 5px; background: rgba(0, 255, 65, 0.05);">
+                    <summary style="padding: 15px; color: var(--cyber-blue); cursor: pointer; font-weight: bold;">
+                        <i class="fab fa-react"></i> React/Node.js Development Projects
+                    </summary>
+                    <div style="padding: 20px;">
+                        <div style="border: 1px solid var(--matrix-dark-green); border-radius: 10px; padding: 20px; background: rgba(0, 0, 0, 0.3); margin-bottom: 20px;">
+                            <h3 style="color: var(--matrix-green); margin-bottom: 15px;">Project 1: Shopping & Payment</h3>
+                            <img src="images/p21.jpg" alt="Shopping & Payment" style="width: 100%; max-width: 400px; height: auto; border-radius: 5px; margin: 15px 0; border: 1px solid var(--matrix-green);">
+                            <img src="images/p24.jpg" alt="Shopping & Payment" style="width: 100%; max-width: 400px; height: auto; border-radius: 5px; margin: 15px 0; border: 1px solid var(--matrix-green);">
+                            <p style="color: var(--matrix-light-green); line-height: 1.6;">The Shopping app and can pay with debit card</p>
+                            <a href="https://fastaxe-express.netlify.app/" style="color: var(--cyber-blue); text-decoration: underline;">Live Demo</a>
+                        </div>
+                        <div style="border: 1px solid var(--matrix-dark-green); border-radius: 10px; padding: 20px; background: rgba(0, 0, 0, 0.3); margin-bottom: 20px;">
+                            <h3 style="color: var(--matrix-green); margin-bottom: 15px;">Project 2: Random name app</h3>
+                            <img src="images/p3.jpg" alt="Random name" style="width: 100%; max-width: 400px; height: auto; border-radius: 5px; margin: 15px 0; border: 1px solid var(--matrix-green);">
+                            <p style="color: var(--matrix-light-green); line-height: 1.6;">The Random name app</p>
+                            <a href="https://crma-randomname.netlify.app/" style="color: var(--cyber-blue); text-decoration: underline;">Live Demo</a>
+                        </div>
+                        <div style="border: 1px solid var(--matrix-dark-green); border-radius: 10px; padding: 20px; background: rgba(0, 0, 0, 0.3);">
+                            <h3 style="color: var(--matrix-green); margin-bottom: 15px;">Project 3: Rental app</h3>
+                            <img src="images/p4.jpg" alt="Rental" style="width: 100%; max-width: 400px; height: auto; border-radius: 5px; margin: 15px 0; border: 1px solid var(--matrix-green);">
+                            <p style="color: var(--matrix-light-green); line-height: 1.6;">The Rental name app</p>
+                            <a href="https://linpingsinsord.netlify.app/" style="color: var(--cyber-blue); text-decoration: underline;">Live Demo</a>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Resume Terminal -->
+        <div class="terminal-window scroll-reveal-right" id="resume">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button"></div>
+                </div>
+                <div class="terminal-title">system.resume --load</div>
+            </div>
+            <div class="terminal-content">
+                <h2 style="color: var(--matrix-green); font-family: 'Orbitron', monospace; margin-bottom: 20px;" class="typing-text">
+                    <i class="fas fa-user-secret"></i> CLASSIFIED MISSION RECORDS
+                </h2>
+                
+                <div style="display: grid; gap: 30px;">
+                    <div class="resume-section">
+                        <h3 style="color: var(--cyber-blue); margin-bottom: 15px;">
+                            <i class="fas fa-briefcase"></i> PROFESSIONAL SUMMARY
+                        </h3>
+                        <p style="color: var(--matrix-light-green); line-height: 1.8; background: rgba(0, 255, 65, 0.05); padding: 20px; border-radius: 10px; border: 1px solid var(--matrix-dark-green);">
+                            I am looking for an opportunity to gain hands-on experience in various fields, including development with Python, Node.js, React, HTML, and CSS, as well as SOC analysis. I am eager to develop my skills, gain real-world experience, and grow alongside a dynamic team.
+                        </p>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3 style="color: var(--cyber-blue); margin-bottom: 15px;">
+                            <i class="fas fa-history"></i> CAREER TIMELINE
+                        </h3>
+                        <div style="background: rgba(0, 255, 65, 0.05); padding: 20px; border-radius: 10px; border: 1px solid var(--matrix-dark-green);">
+                            <div style="border-left: 3px solid var(--matrix-green); padding-left: 20px;">
+                                <h4 style="color: var(--matrix-green); margin-bottom: 10px;">Senior Developer at MC-Enternal Network Corp.</h4>
+                                <p style="color: var(--cyber-blue); margin-bottom: 10px;">Oct 2017 - Nov 2022</p>
+                                <p style="color: var(--matrix-light-green); line-height: 1.6;">Lead a team of developers to improve plugins and scalable services</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3 style="color: var(--cyber-blue); margin-bottom: 15px;">
+                            <i class="fas fa-graduation-cap"></i> EDUCATION
+                        </h3>
+                        <div style="background: rgba(0, 255, 65, 0.05); padding: 20px; border-radius: 10px; border: 1px solid var(--matrix-dark-green);">
+                            <p style="color: var(--matrix-light-green); line-height: 1.8;">
+                                <strong>Cyber-Security</strong><br>
+                                Chulachomklao Royal Military Academy<br>
+                                2021 (Studying)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3 style="color: var(--cyber-blue); margin-bottom: 15px;">
+                            <i class="fas fa-download"></i> CLASSIFIED FILES
+                        </h3>
+                        <p style="color: var(--matrix-light-green); margin-bottom: 20px;">For a more detailed look at my qualifications, download my resume:</p>
+                        <a href="CV/Petcharat_Pobungkarn_CV.pdf" class="btn matrix-decode" style="display: inline-block;" download="Petcharat_Pobungkarn_CV.pdf">DOWNLOAD_RESUME</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Matrix Terminal with Binary Rain Background -->
+        <div class="terminal-window skills-terminal scroll-reveal-scale" id="skills">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button"></div>
+                </div>
+                <div class="terminal-title">abilities.log --scan</div>
+            </div>
+            <div class="terminal-content">
+                <h2 style="color: var(--matrix-green); font-family: 'Orbitron', monospace; margin-bottom: 20px;" class="typing-text matrix-decode">
+                    <i class="fas fa-code"></i> ABILITY MATRIX SCANNING...
+                </h2>
+                
+                <div class="skills-content-wrapper">
+                    <!-- Skill 1 -->
+                    <div class="skills-inner-content animate">
+                        <h3 class="skill-category-text matrix-decode">Website Development</h3>
+                        <div class="progressbar-container">
+                            <div class="terminal-skill-wrapper">
+                                <div class="terminal-command matrix-decode">$ system_profiler SPHardwareDataType --verbose</div>
+                                <div class="terminal-skill-line">
+                                    <span class="terminal-label matrix-decode">HTML</span>
+                                    <span class="terminal-progress" data-width="90">
+                                        <span class="terminal-bar-fill"></span>
+                                        <span class="terminal-percentage">90%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="terminal-skill-wrapper">
+                                <div class="terminal-skill-line">
+                                    <span class="terminal-label matrix-decode">CSS</span>
+                                    <span class="terminal-progress" data-width="85">
+                                        <span class="terminal-bar-fill"></span>
+                                        <span class="terminal-percentage">85%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="skills-inner-content animate">
+                        <h3 class="skill-category-text matrix-decode">Programming Languages</h3>
+                        <div class="progressbar-container">
+                            <div class="terminal-skill-wrapper">
+                                <div class="terminal-command matrix-decode">$ system_profiler SPHardwareDataType | grep 'Memory:'</div>
+                                <div class="terminal-skill-line">
+                                    <span class="terminal-label matrix-decode">Node.js/React</span>
+                                    <span class="terminal-progress" data-width="60">
+                                        <span class="terminal-bar-fill"></span>
+                                        <span class="terminal-percentage">60%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="terminal-skill-wrapper">
+                                <div class="terminal-skill-line">
+                                    <span class="terminal-label matrix-decode">Python</span>
+                                    <span class="terminal-progress" data-width="75">
+                                        <span class="terminal-bar-fill"></span>
+                                        <span class="terminal-percentage">75%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="skills-inner-content animate">
+                        <h3 class="skill-category-text matrix-decode">Database Management</h3>
+                        <div class="progressbar-container">
+                            <div class="terminal-skill-wrapper">
+                                <div class="terminal-command matrix-decode">$ system_profiler SPHardwareDataType | grep 'Model Identifier'</div>
+                                <div class="terminal-skill-line">
+                                    <span class="terminal-label matrix-decode">API Development</span>
+                                    <span class="terminal-progress" data-width="40">
+                                        <span class="terminal-bar-fill"></span>
+                                        <span class="terminal-percentage">40%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="terminal-skill-wrapper">
+                                <div class="terminal-skill-line">
+                                    <span class="terminal-label matrix-decode">SQL Database</span>
+                                    <span class="terminal-progress" data-width="50">
+                                        <span class="terminal-bar-fill"></span>
+                                        <span class="terminal-percentage">50%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill 4 -->
+                    <div class="skills-inner-content animate">
+                        <h3 class="skill-category-text matrix-decode">SOC Analyst Skills</h3>
+                        <div class="progressbar-container">
+                            <div class="terminal-skill-wrapper">
+                                <div class="terminal-command matrix-decode">$ system_profiler SPHardwareDataType | grep 'Processor:'</div>
+                                <div class="terminal-skill-line">
+                                    <span class="terminal-label matrix-decode">Malware Analysis</span>
+                                    <span class="terminal-progress" data-width="40">
+                                        <span class="terminal-bar-fill"></span>
+                                        <span class="terminal-percentage">40%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="terminal-skill-wrapper">
+                                <div class="terminal-skill-line">
+                                    <span class="terminal-label matrix-decode">Network Security</span>
+                                    <span class="terminal-progress" data-width="45">
+                                        <span class="terminal-bar-fill"></span>
+                                        <span class="terminal-percentage">45%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="terminal-skill-wrapper">
+                                <div class="terminal-skill-line">
+                                    <span class="terminal-label matrix-decode">Endpoint Protection</span>
+                                    <span class="terminal-progress" data-width="10">
+                                        <span class="terminal-bar-fill"></span>
+                                        <span class="terminal-percentage">10%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="terminal-skill-wrapper">
+                                <div class="terminal-skill-line">
+                                    <span class="terminal-label matrix-decode">Threat Intelligence</span>
+                                    <span class="terminal-progress" data-width="25">
+                                        <span class="terminal-bar-fill"></span>
+                                        <span class="terminal-percentage">25%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Terminal -->
+        <div class="terminal-window scroll-reveal" id="certs">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button"></div>
+                </div>
+                <div class="terminal-title">certifications.db --verify</div>
+            </div>
+            <div class="terminal-content">
+                <h2 style="color: var(--matrix-green); font-family: 'Orbitron', monospace; margin-bottom: 20px;" class="typing-text matrix-decode">
+                    <i class="fas fa-certificate"></i> DIGITAL CREDENTIALS VALIDATED
+                </h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div class="cert-item" style="text-align: center; padding: 20px; border: 1px solid var(--matrix-green); border-radius: 10px; background: rgba(0, 255, 65, 0.05);">
+                        <img src="images/Certificate/presec.jpg" alt="Pre-Security Certificate" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px; border: 1px solid var(--matrix-dark-green);">
+                        <h4 style="color: var(--matrix-green); margin-bottom: 10px;">Pre-Security</h4>
+                        <p style="color: var(--matrix-light-green); margin-bottom: 5px;">Issued by: Try Hack Me</p>
+                        <p style="color: var(--cyber-blue); margin-bottom: 15px;">Year: 2025</p>
+                        <a href="https://tryhackme.com/certificate/THM-H70CMZOJX6" class="btn" style="font-size: 0.9rem;">VIEW_CERTIFICATE</a>
+                    </div>
+                    
+                    <div class="cert-item" style="text-align: center; padding: 20px; border: 1px solid var(--matrix-green); border-radius: 10px; background: rgba(0, 255, 65, 0.05);">
+                        <img src="images/Certificate/ncsa.jpg" alt="Basic Cyber-Security Certificate" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px; border: 1px solid var(--matrix-dark-green);">
+                        <h4 style="color: var(--matrix-green); margin-bottom: 10px;" class="matrix-decode">Basic Cyber-Security</h4>
+                        <p style="color: var(--matrix-light-green); margin-bottom: 5px;" class="matrix-decode">Issued by: NCSA</p>
+                        <p style="color: var(--cyber-blue); margin-bottom: 15px;">Year: 2025</p>
+                        <a href="https://media.mooc.ncsa.or.th/certificate/XI01FDTOVELZ7.pdf" class="btn matrix-decode" style="font-size: 0.9rem;">VIEW_CERTIFICATE</a>
+                    </div>
+                    
+                    <div class="cert-item" style="text-align: center; padding: 20px; border: 1px solid var(--matrix-green); border-radius: 10px; background: rgba(0, 255, 65, 0.05);">
+                        <img src="images/Certificate/cyber.png" alt="Cyber-Security Learning Path Certificate" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px; border: 1px solid var(--matrix-dark-green);">
+                        <h4 style="color: var(--matrix-green); margin-bottom: 10px;" class="matrix-decode">Cyber-Security Learning Path</h4>
+                        <p style="color: var(--matrix-light-green); margin-bottom: 5px;" class="matrix-decode">Issued by: Let's Defend</p>
+                        <p style="color: var(--cyber-blue); margin-bottom: 15px;">Year: 2025</p>
+                        <a href="https://app.letsdefend.io/certificate/show/1d69e5e9-198e-460a-9e18-7748f40663c9" class="btn matrix-decode" style="font-size: 0.9rem;">VIEW_CERTIFICATE</a>
+                    </div>
+                    
+                    <div class="cert-item" style="text-align: center; padding: 20px; border: 1px solid var(--matrix-green); border-radius: 10px; background: rgba(0, 255, 65, 0.05);">
+                        <img src="images/Certificate/soclearn.jpg" alt="SOC Analyst Certificate" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px; border: 1px solid var(--matrix-dark-green);">
+                        <h4 style="color: var(--matrix-green); margin-bottom: 10px;">SOC Analyst</h4>
+                        <p style="color: var(--matrix-light-green); margin-bottom: 5px;">Issued by: Let's Defend</p>
+                        <p style="color: var(--cyber-blue); margin-bottom: 15px;">Year: 2025</p>
+                        <a href="https://app.letsdefend.io/certificate/show/86ca88db-0d3a-4032-ac56-26b87b09b264" class="btn" style="font-size: 0.9rem;">VIEW_CERTIFICATE</a>
+                    </div>
+                    
+                    <div class="cert-item" style="text-align: center; padding: 20px; border: 1px solid var(--matrix-green); border-radius: 10px; background: rgba(0, 255, 65, 0.05);">
+                        <img src="images/Certificate/malware.png" alt="Malware Analysis Certificate" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px; border: 1px solid var(--matrix-dark-green);">
+                        <h4 style="color: var(--matrix-green); margin-bottom: 10px;">Malware Analysis Skill Path</h4>
+                        <p style="color: var(--matrix-light-green); margin-bottom: 5px;">Issued by: Let's Defend</p>
+                        <p style="color: var(--cyber-blue); margin-bottom: 15px;">Year: 2025</p>
+                        <a href="https://app.letsdefend.io/certificate/show/7271dd8c-d7ee-416a-9e19-5d2ce19beb06" class="btn" style="font-size: 0.9rem;">VIEW_CERTIFICATE</a>
+                    </div>
+                    
+                    <div class="cert-item" style="text-align: center; padding: 20px; border: 1px solid var(--matrix-green); border-radius: 10px; background: rgba(0, 255, 65, 0.05);">
+                        <img src="images/Certificate/program.png" alt="Programming for Cybersecurity Certificate" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px; border: 1px solid var(--matrix-dark-green);">
+                        <h4 style="color: var(--matrix-green); margin-bottom: 10px;">Programming for Cybersecurity</h4>
+                        <p style="color: var(--matrix-light-green); margin-bottom: 5px;">Issued by: Let's Defend</p>
+                        <p style="color: var(--cyber-blue); margin-bottom: 15px;">Year: 2025</p>
+                        <a href="https://app.letsdefend.io/certificate/show/499a0227-7048-4e33-8452-962727a00cfc" class="btn" style="font-size: 0.9rem;">VIEW_CERTIFICATE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Terminal -->
+        <div class="terminal-window scroll-reveal-left" id="contact">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button"></div>
+                </div>
+                <div class="terminal-title matrix-decode">contact_protocol.exe --establish</div>
+            </div>
+            <div class="terminal-content">
+                <h2 style="color: var(--matrix-green); font-family: 'Orbitron', monospace; margin-bottom: 20px;" class="typing-text matrix-decode">
+                    <i class="fas fa-satellite-dish"></i> ESTABLISH COMMUNICATION LINK
+                </h2>
+                
+                <p style="color: var(--matrix-light-green); margin-bottom: 30px; font-size: 1.1rem;" class="matrix-decode">
+                    Ready to jack into the matrix? Let's establish a secure connection and discuss your cybersecurity needs.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div class="contact-info">
+                        <h3 style="color: var(--cyber-blue); margin-bottom: 15px;" class="matrix-decode">
+                            <i class="fas fa-terminal"></i> DIRECT CHANNELS
+                        </h3>
+                        <div style="color: var(--matrix-green); line-height: 2;">
+                            <p style="margin: 10px 0;">
+                                <i class="fas fa-envelope" style="color: var(--matrix-light-green); margin-right: 10px;"></i> 
+                                <a href="mailto:seven2002.7@gmail.com" style="color: var(--matrix-green); text-decoration: none;">seven2002.7@gmail.com</a>
+                            </p>
+                            <p style="margin: 10px 0;">
+                                <i class="fas fa-phone" style="color: var(--matrix-light-green); margin-right: 10px;"></i> 
+                                <a href="tel:+66972416174" style="color: var(--matrix-green); text-decoration: none;">+66 97 241 6174</a>
+                            </p>
+                            <p style="margin: 10px 0;">
+                                <i class="fab fa-discord" style="color: var(--matrix-light-green); margin-right: 10px;"></i> 
+                                reventhan#0001
+                            </p>
+                            <p style="margin: 10px 0;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--matrix-light-green); margin-right: 10px;"></i> 
+                                Bangkok, Thailand
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-message">
+                        <h3 style="color: var(--cyber-blue); margin-bottom: 15px;">
+                            <i class="fas fa-rocket"></i> QUICK MESSAGE
+                        </h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            <a href="#" class="btn" style="flex: 1; text-align: center; min-width: 120px;">HIRE_ME</a>
+                            <a href="#" class="btn secondary" style="flex: 1; text-align: center; min-width: 120px;">COLLABORATE</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <section id="port" class="port">
-        <div class="page-header-content">
-            <h1>My Portfolio</h1>
-        </div>
-        <div class="portfolio-container">
-            <!-- Dropdown 1 -->
-            <details>
-                <summary>Web Development Projects</summary>
-                <div class="portfolio-content">
-                    <div class="project">
-                        <h3>Project 1: Webshop for Minecraft server</h3>
-                        <img src="images/p5.jpg" alt="Webshop for Minecraft server" class="project-image">
-                        <p>Description</p>
-                        <h5>The Webshop for minecraft server</h5>
-                    </div>
-                </div>
-            </details>
-    
-            <!-- Dropdown 2 -->
-            <details>
-                <summary>Program Development Projects</summary>
-                <div class="portfolio-content">
-                    <div class="project">
-                        <h3>Project 1: Bot Web Scraper</h3>
-                        <img src="images/P1.jpg" alt="Bot Web Scraper" class="project-image">
-                        <p>Description</p>
-                    </div>
-                </div>
-            </details>
-    
-            <!-- Dropdown 3 -->
-            <details>
-                <summary>React/Node.js Development Projects</summary>
-                <div class="portfolio-content">
-                    <div class="project">
-                        <h3>Project 1: Shopping & Payment</h3>
-                        <img src="images/p21.jpg" alt="Shopping & Payment" class="project-image">
-                        <img src="images/p24.jpg" alt="Shopping & Payment" class="project-image">
-                        <p>Description</p>
-                        <h5>The Shopping app and can pay with debit card</h5>
-                        <a href="https://fastaxe-express.netlify.app/" class="link">Example</a>
-                    </div>
-                    <div class="project">
-                        <h3>Project 2: Random name app</h3>
-                        <img src="images/p3.jpg" alt="Random name" class="project-image">
-                        <p>Description</p>
-                        <h5>The Random name app</h5>
-                        <a href="https://crma-randomname.netlify.app/" class="link">Example</a>
-                    </div>
-                    <div class="project">
-                        <h3>Project 3: Rental app</h3>
-                        <img src="images/p4.jpg" alt="Rental" class="project-image">
-                        <p>Description</p>
-                        <h5>The Rental name app</h5>
-                        <a href="https://linpingsinsord.netlify.app/" class="link">Example</a>
-                    </div>
-                </div>
-            </details>
-        </div>
-    </section>    
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume">
-        <div class="page-header-content">
-            <h1>My Resume</h1>
-            <p class="resume-subtitle">A detailed look at my professional journey and qualifications</p>
-        </div>
-        <div class="resume-content">
-            <div class="resume-summary">
-                <h2>Professional Summary</h2>
-                <p>
-                    I am looking for an opportunity to gain hands-on experience in various fields, including development with Python, Node.js, React, HTML, and CSS, as well as SOC analysis. I am eager to develop my skills, gain real-world experience, and grow alongside a dynamic team.
-                </p>
-            </div>
-            <div class="resume-timeline">
-                <h2>Career Timeline</h2>
-                <ul>
-                    <li>
-                        <h3>Senior Developer at MC-Enternal Network Crop.</h3>
-                        <p>Oct 2017 - Nov 2022</p>
-                        <p>Lead a team of developers to improve plugins. and scalable services</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="resume-education">
-                <h2>Education</h2>
-                <p>
-                    Cyber-Security in Cyber Security, Chulachomklao Royal Military Academy, 2021(Studying)
-                </p>
-            </div>
-            <div class="resume-download">
-                <p>For a more detailed look at my qualifications, download my resume:</p>
-                <br>
-                <br>
-                <a href="path/to/your_resume.pdf" class="btn btn-primary">Download Resume</a>
-            </div>
-        </div>
-    </section>
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
-            <div class="page-header-content">
-                <h1>My Skills</h1>
-            </div>
-
-            <div class="skills__content-wrapper">
-                <!-- Skill 1 -->
-                <div class="skills__content-wrapper__inner-content animate">
-                    <h3 class="skills__content-wrapper__inner-content__category-text">Website</h3>
-                    <div class="skills__content-wrapper__inner-content__progressbar-container">
-                        <div class="progressbar-wrapper">
-                            <p>HTML</p>
-                            <div class="line">
-                                <span class="progress" data-width="90%"></span>
-                            </div>
-                        </div>
-                        <div class="progressbar-wrapper">
-                            <p>CSS</p>
-                            <div class="line">
-                                <span class="progress" data-width="85%"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skill 2 -->
-                <div class="skills__content-wrapper__inner-content animate">
-                    <h3 class="skills__content-wrapper__inner-content__category-text">Programming</h3>
-                    <div class="skills__content-wrapper__inner-content__progressbar-container">
-                        <div class="progressbar-wrapper">
-                            <p>Node.js/React</p>
-                            <div class="line">
-                                <span class="progress" data-width="60%"></span>
-                            </div>
-                        </div>
-                        <div class="progressbar-wrapper">
-                            <p>Python</p>
-                            <div class="line">
-                                <span class="progress" data-width="75%"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skill 3 -->
-                <div class="skills__content-wrapper__inner-content animate">
-                    <h3 class="skills__content-wrapper__inner-content__category-text">Database</h3>
-                    <div class="skills__content-wrapper__inner-content__progressbar-container">
-                        <div class="progressbar-wrapper">
-                            <p>API</p>
-                            <div class="line">
-                                <span class="progress" data-width="40%"></span>
-                            </div>
-                        </div>
-                        <div class="progressbar-wrapper">
-                            <p>SQL</p>
-                            <div class="line">
-                                <span class="progress" data-width="50%"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skill 4 -->
-                <div class="skills__content-wrapper__inner-content animate">
-                    <h3 class="skills__content-wrapper__inner-content__category-text">SOC Analyst</h3>
-                    <div class="skills__content-wrapper__inner-content__progressbar-container">
-                        <div class="progressbar-wrapper">
-                            <p>Malware Analyst</p>
-                            <div class="line">
-                                <span class="progress" data-width="40%"></span>
-                            </div>
-                        </div>
-                        <div class="progressbar-wrapper">
-                            <p>Network Analyst</p>
-                            <div class="line">
-                                <span class="progress" data-width="45%"></span>
-                            </div>
-                        <div class="progressbar-wrapper">
-                            <p>Endpoint Analyst</p>
-                            <div class="line">
-                                <span class="progress" data-width="10%"></span>
-                            </div>
-                        </div>
-                        <div class="progressbar-wrapper">
-                            <p>Threat Analyst</p>
-                            <div class="line">
-                                <span class="progress" data-width="20%"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-         <!-- Certificates Section -->
-        <section id="certificates" class="certificates">
-            <div class="page-header-content">
-                <h1>My Certificates</h1>
-                <p class="certificates-subtitle">Certifications that showcase my skills and expertise</p>
-            </div>
-            <div class="certificates-container">
-                <div class="certificate">
-                    <img src="images/Certificate/presec.jpg" alt="Certificate 1">
-                    <h3>Pre-Security</h3>
-                    <p>Issued by: Try Hack Me</p>
-                    <p>Year: 2025</p>
-                    <a href="https://tryhackme.com/certificate/THM-H70CMZOJX6" class="btn">View Certificate</a>
-                </div>
-                <div class="certificate">
-                    <img src="images/Certificate/ncsa.jpg" alt="Certificate 2">
-                    <h3>Basic Cyber-Security</h3>
-                    <p>Issued by: NCSA</p>
-                    <p>Year: 2025</p>
-                    <a href="https://media.mooc.ncsa.or.th/certificate/XI01FDTOVELZ7.pdf" class="btn">View Certificate</a>
-                </div>
-                <div class="certificate">
-                    <img src="images/Certificate/cyber.png" alt="Certificate 3">
-                    <h3>Cyber-Security Learning Path</h3>
-                    <p>Issued by: Let's Defend</p>
-                    <p>Year: 2025</p>
-                    <a href="https://app.letsdefend.io/certificate/show/1d69e5e9-198e-460a-9e18-7748f40663c9" class="btn">View Certificate</a>
-                </div>
-                <div class="certificate">
-                    <img src="images/Certificate/soclearn.jpg" alt="Certificate 4">
-                    <h3>SOC Analyst</h3>
-                    <p>Issued by: Let's Defend</p>
-                    <p>Year: 2025</p>
-                    <a href="https://app.letsdefend.io/certificate/show/86ca88db-0d3a-4032-ac56-26b87b09b264" class="btn">View Certificate</a>
-                </div>
-                <div class="certificate">
-                    <img src="images/Certificate/malware.png" alt="Certificate 5">
-                    <h3>Malware Analysis Skill Path</h3>
-                    <p>Issued by: Let's Defend</p>
-                    <p>Year: 2025</p>
-                    <a href="https://app.letsdefend.io/certificate/show/7271dd8c-d7ee-416a-9e19-5d2ce19beb06" class="btn">View Certificate</a>
-                </div>
-                <div class="certificate">
-                    <img src="images/Certificate/program.png" alt="Certificate 6">
-                    <h3>Programming for Cybersecurity</h3>
-                    <p>Issued by: Let's Defend</p>
-                    <p>Year: 2025</p>
-                    <a href="https://app.letsdefend.io/certificate/show/499a0227-7048-4e33-8452-962727a00cfc" class="btn">View Certificate</a>
-                </div>
-            </div>
-            </div>
-        </section>
-        <script src="script.js"></script>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact-image">
-            <img src="images/main.jpg" alt="Contact">
-        </div>
-        <br>
-        <div class="page-header-content">
-            <h1>Contact Me</h1>
-            <p class="contact-subtitle">Feel free to reach out to me through any of the following methods:</p>
-        </div>
-        <div class="contact-content">
-            <ul>
-                <li>
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:your-email@example.com">seven2002.7@gmail.com</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+66972416174">+66 97 241 6174</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-map-marker-alt"></i>
-                    <p>Bangkok, Thailand</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <!-- JavaScript for Enhanced Effects -->
     <script>
-        /** creating button click show hide navbar **/
-        var togglebtn = document.querySelector(".togglebtn");
-        var nav = document.querySelector(".navlinks");
-        var links = document.querySelector(".navlinks li");
-
-        togglebtn.addEventListener("click", function () {
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        });
-
-        var typed = new Typed(".input", {
-            strings: ["Fullstack Developer", "Program Developer", "Web Developer","Pre-Soc Analyst"],
-            typedSpeed: 60,
-            backSpeed: 55,
-            loop: true
-        });
-
-        // Play the animation when page loads
-        window.onload = function() {
-            const elements = document.querySelectorAll('.animate');
-            elements.forEach(element => {
-                element.classList.add('play');
+        // Typed.js animation for tagline
+        document.addEventListener('DOMContentLoaded', function() {
+            var typed = new Typed('#typed-text', {
+                strings: [
+                    'CYBERSECURITY_SPECIALIST.exe',
+                    'DIGITAL_FORENSICS_EXPERT.py',
+                    'SECURITY_ANALYST.js',
+                    'PENETRATION_TESTER.sh',
+                    'SOC_ANALYST.exe',
+                    'THREAT_HUNTER.py'
+                ],
+                typeSpeed: 100,
+                backSpeed: 50,
+                backDelay: 2000,
+                loop: true,
+                showCursor: true,
+                cursorChar: '_'
             });
-        };
-        document.addEventListener("DOMContentLoaded", function() {
-            const progressBars = document.querySelectorAll(".progress");
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.togglebtn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+
+        // Matrix rain effect enhancement
+        function createMatrixRain() {
+            const matrixBg = document.querySelector('.matrix-bg');
             
+            // Create additional matrix streams
+            for (let i = 0; i < 3; i++) {
+                const stream = document.createElement('div');
+                stream.style.position = 'absolute';
+                stream.style.top = '-100px';
+                stream.style.left = Math.random() * 100 + '%';
+                stream.style.color = i % 2 ? 'var(--matrix-green)' : 'var(--cyber-blue)';
+                stream.style.fontSize = (Math.random() * 10 + 10) + 'px';
+                stream.style.opacity = Math.random() * 0.5 + 0.1;
+                stream.style.fontFamily = 'Share Tech Mono, monospace';
+                stream.textContent = Math.random().toString(2).substr(2, 20);
+                stream.style.animation = `matrixFall ${Math.random() * 20 + 10}s linear infinite`;
+                stream.style.animationDelay = Math.random() * 5 + 's';
+                stream.style.pointerEvents = 'none';
+                stream.style.zIndex = '-1';
+                
+                matrixBg.appendChild(stream);
+            }
+        }
+
+        // Initialize enhanced effects
+        createMatrixRain();
+
+        // Skills progress bar animation
+        function animateProgressBars() {
+            const progressBars = document.querySelectorAll('.progress');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const bar = entry.target;
+                        const width = bar.getAttribute('data-width');
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 200);
+                    }
+                });
+            }, { threshold: 0.5 });
+
             progressBars.forEach(bar => {
-                const width = bar.getAttribute("data-width");
-                bar.style.width = width;
+                bar.style.width = '0%';
+                observer.observe(bar);
             });
+        }
+
+        // Initialize progress bars animation
+        animateProgressBars();
+
+        // Enhanced skills section animation
+        document.querySelectorAll('.skills-inner-content').forEach((element, index) => {
+            element.style.animationDelay = `${index * 0.2}s`;
+        });
+
+        // Scroll Animation Reveal System
+        function initScrollAnimations() {
+            const scrollElements = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale');
+            
+            const elementInView = (el, dividend = 1) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+                );
+            };
+            
+            const elementOutOfView = (el) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+                );
+            };
+            
+            const displayScrollElement = (element) => {
+                element.classList.add('revealed');
+            };
+            
+            const hideScrollElement = (element) => {
+                element.classList.remove('revealed');
+            };
+            
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 1.25)) {
+                        displayScrollElement(el);
+                    } else if (elementOutOfView(el)) {
+                        hideScrollElement(el);
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', handleScrollAnimation);
+            handleScrollAnimation(); // Initial check
+        }
+
+        // Clean Progress Bar Loading (No Animations)
+        function initCleanProgressBars() {
+            const progressBars = document.querySelectorAll('.progress');
+            const terminalBars = document.querySelectorAll('.terminal-bar-fill');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting && !entry.target.hasAttribute('data-loaded')) {
+                        const bar = entry.target;
+                        const width = bar.getAttribute('data-width');
+                        
+                        // Mark as loaded to prevent re-triggering
+                        bar.setAttribute('data-loaded', 'true');
+                        
+                        // Handle regular progress bars
+                        if (bar.classList.contains('progress')) {
+                            bar.style.width = '0%';
+                            bar.style.opacity = '1';
+                            
+                            setTimeout(() => {
+                                bar.style.transition = 'width 2.5s cubic-bezier(0.4, 0.0, 0.2, 1)';
+                                bar.style.width = width;
+                            }, index * 150);
+                        }
+                        
+                        // Handle terminal progress bars
+                        if (bar.classList.contains('terminal-bar-fill')) {
+                            const parentProgress = bar.closest('.terminal-progress');
+                            const percentage = parentProgress.getAttribute('data-width');
+                            
+                            setTimeout(() => {
+                                parentProgress.style.setProperty('--progress-width', percentage + '%');
+                                parentProgress.setAttribute('data-loaded', 'true');
+                            }, index * 200);
+                        }
+                    }
+                });
+            }, { 
+                threshold: 0.3,
+                rootMargin: '0px 0px -20px 0px'
+            });
+
+            // Observe regular progress bars
+            progressBars.forEach((bar, index) => {
+                bar.style.width = '0%';
+                bar.style.opacity = '1';
+                bar.removeAttribute('data-loaded');
+                observer.observe(bar);
+            });
+            
+            // Observe terminal progress bars
+            terminalBars.forEach((bar, index) => {
+                bar.style.width = '0%';
+                bar.removeAttribute('data-loaded');
+                observer.observe(bar);
+            });
+        }
+
+        // Typing Animation for Headers
+        function initTypingAnimations() {
+            const typingElements = document.querySelectorAll('.typing-text');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'typing 3s steps(40, end), blink-caret 0.75s step-end infinite';
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            typingElements.forEach(el => observer.observe(el));
+        }
+
+        // Matrix Console Effect
+        function addMatrixConsoleEffect() {
+            const terminals = document.querySelectorAll('.terminal-window');
+            
+            terminals.forEach((terminal, index) => {
+                terminal.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = `
+                        0 0 30px rgba(0, 255, 65, 0.4),
+                        0 0 60px rgba(255, 0, 110, 0.2),
+                        0 0 90px rgba(131, 56, 236, 0.1)
+                    `;
+                    this.style.transform = 'translateY(-5px) scale(1.02)';
+                });
+                
+                terminal.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = '';
+                    this.style.transform = '';
+                });
+            });
+        }
+
+        // Matrix Text Decoding Effect with Multiple Colors
+        function initMatrixDecoding() {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%^&*()_+-=[]{}|;:,.<>?';
+            const colorClasses = ['color-cyan', 'color-pink', 'color-purple', 'color-yellow', 'color-teal', 'color-orange', 'color-blue'];
+            
+            function decodeText(element, originalText, duration = 800) { // Much faster - reduced from 3000ms to 800ms
+                const textLength = originalText.length;
+                let currentText = '';
+                let iteration = 0;
+                
+                // Assign random color class
+                const randomColor = colorClasses[Math.floor(Math.random() * colorClasses.length)];
+                element.classList.add(randomColor);
+                
+                // Generate random characters initially
+                for (let i = 0; i < textLength; i++) {
+                    currentText += characters[Math.floor(Math.random() * characters.length)];
+                }
+                
+                element.textContent = currentText;
+                element.classList.add('decoding');
+                
+                const interval = setInterval(() => {
+                    let newText = '';
+                    
+                    for (let i = 0; i < textLength; i++) {
+                        if (i < iteration) {
+                            newText += originalText[i];
+                        } else {
+                            newText += characters[Math.floor(Math.random() * characters.length)];
+                        }
+                    }
+                    
+                    element.textContent = newText;
+                    
+                    if (iteration >= textLength) {
+                        clearInterval(interval);
+                        element.textContent = originalText;
+                        element.classList.remove('decoding');
+                        element.classList.add('decoded');
+                    }
+                    
+                    iteration += 1; // Faster increment - changed from 1/3 to 1
+                }, duration / textLength / 3); // Faster timing - divided by 3
+            }
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.hasAttribute('data-decoded')) {
+                        const element = entry.target;
+                        const originalText = element.getAttribute('data-text') || element.textContent;
+                        element.setAttribute('data-decoded', 'true');
+                        element.setAttribute('data-text', originalText);
+                        
+                        setTimeout(() => {
+                            decodeText(element, originalText);
+                        }, Math.random() * 300); // Reduced delay from 1500ms to 300ms
+                    }
+                });
+            }, {
+                threshold: 0.5,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            // Find elements to apply matrix decoding
+            const decodeElements = document.querySelectorAll('.matrix-decode');
+            decodeElements.forEach(element => {
+                observer.observe(element);
+            });
+        }
+
+        // Enhanced Particle System - Reduced density
+        function createEnhancedParticles() {
+            const particleContainer = document.querySelector('.code-particles');
+            
+            // Create fewer particles for better performance
+            for (let i = 0; i < 8; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                const colors = ['#ff006e', '#8338ec', '#3a86ff', '#06ffa5', '#ffbe0b', '#fb5607'];
+                const texts = ['function()', '{security}', 'matrix.exe', 'hack.py', 'cyber.js'];
+                
+                particle.textContent = texts[Math.floor(Math.random() * texts.length)];
+                particle.style.color = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.fontSize = (Math.random() * 6 + 10) + 'px';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (Math.random() * 15 + 15) + 's';
+                particle.style.opacity = '0.6'; // Reduce opacity
+                
+                particleContainer.appendChild(particle);
+            }
+        }
+
+        // Initialize all animations
+        initScrollAnimations();
+        initCleanProgressBars(); // Updated function name
+        initTypingAnimations();
+        addMatrixConsoleEffect();
+        createEnhancedParticles();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add glitch effect on hover for terminal windows
+        document.querySelectorAll('.terminal-window').forEach(terminal => {
+            terminal.addEventListener('mouseenter', function() {
+                this.style.animation = 'glitch 0.3s ease-in-out';
+            });
+            
+            terminal.addEventListener('animationend', function() {
+                this.style.animation = '';
+            });
+        });
+
+        // Matrix-style console messages
+        console.log('%c> SYSTEM INITIALIZED', 'color: #00ff41; font-family: monospace; font-size: 14px;');
+        console.log('%c> LOADING REVENTHAN.EXE...', 'color: #00d4ff; font-family: monospace; font-size: 14px;');
+        console.log('%c> CYBERSECURITY PROTOCOLS ACTIVE', 'color: #65ff00; font-family: monospace; font-size: 14px;');
+        console.log('%c> THE MATRIX HAS YOU...', 'color: #ff0080; font-family: monospace; font-size: 14px;');
+    </script>
+
+    <style>
+        @keyframes glitch {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(-2px); }
+            40% { transform: translateX(2px); }
+            60% { transform: translateX(-2px); }
+            80% { transform: translateX(2px); }
+            100% { transform: translateX(0); }
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 255, 65, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .cert-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 255, 65, 0.3);
+            transition: all 0.3s ease;
+        }
+    </style>
+
+    <script>
+        // Initialize all effects when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initScrollAnimations();
+            initCleanProgressBars();
+            initTypingAnimations();
+            initMatrixDecoding(); // Add matrix decoding effect
+            initEnhancedEffects();
+            createMatrixRain();
+            
+            // Typing animation for main title
+            if (document.querySelector('.hero h1')) {
+                typeWriter(document.querySelector('.hero h1'), document.querySelector('.hero h1').textContent, 100);
+            }
         });
     </script>
 </body>
