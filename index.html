@@ -18,22 +18,6 @@
     <!-- Floating Code Particles -->
     <div class="code-particles">
         <div class="particle">01001000</div>
-        <div class="part        }
-        
-        // Initialize all effects when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            initScrollAnimations();
-            initCleanProgressBars();
-            initTypingAnimations();
-            initMatrixDecoding(); // Add matrix decoding effect
-            initEnhancedEffects();
-            createMatrixRain();
-            
-            // Typing animation for main title
-            typeWriter(document.querySelector('.hero h1'), document.querySelector('.hero h1').textContent, 100);
-        });
-
-        .skill-category:hover {div>
         <div class="particle">console.log</div>
         <div class="particle">matrix.exe</div>
     </div>
@@ -289,7 +273,7 @@
             </div>
             <div class="terminal-content">
                 <h2 style="color: var(--matrix-green); font-family: 'Orbitron', monospace; margin-bottom: 20px;" class="typing-text matrix-decode">
-                    <i class="fas fa-code"></i> ABILITY MATRIX SCANNING...
+                    <i class="fas fa-code"></i> SKILLS
                 </h2>
                 
                 <div class="skills-content-wrapper">
@@ -429,7 +413,7 @@
             </div>
             <div class="terminal-content">
                 <h2 style="color: var(--matrix-green); font-family: 'Orbitron', monospace; margin-bottom: 20px;" class="typing-text matrix-decode">
-                    <i class="fas fa-certificate"></i> DIGITAL CREDENTIALS VALIDATED
+                    <i class="fas fa-certificate"></i> CERTIFICATE
                 </h2>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
@@ -496,7 +480,7 @@
             </div>
             <div class="terminal-content">
                 <h2 style="color: var(--matrix-green); font-family: 'Orbitron', monospace; margin-bottom: 20px;" class="typing-text matrix-decode">
-                    <i class="fas fa-satellite-dish"></i> ESTABLISH COMMUNICATION LINK
+                    <i class="fas fa-satellite-dish"></i> CONTACT
                 </h2>
                 
                 <p style="color: var(--matrix-light-green); margin-bottom: 30px; font-size: 1.1rem;" class="matrix-decode">
@@ -564,9 +548,72 @@
             });
         });
 
-        // Mobile menu toggle
+        // Mobile menu toggle with touch support
         document.querySelector('.togglebtn').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('active');
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+            
+            // Add animation to hamburger menu
+            this.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('nav ul').classList.remove('active');
+                document.querySelector('.togglebtn').classList.remove('active');
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const nav = document.querySelector('nav ul');
+            const toggleBtn = document.querySelector('.togglebtn');
+            
+            if (!nav.contains(e.target) && !toggleBtn.contains(e.target)) {
+                nav.classList.remove('active');
+                toggleBtn.classList.remove('active');
+            }
+        });
+        
+        // Touch device detection and optimization
+        function isTouchDevice() {
+            return (('ontouchstart' in window) ||
+                   (navigator.maxTouchPoints > 0) ||
+                   (navigator.msMaxTouchPoints > 0));
+        }
+        
+        // Mobile-specific optimizations
+        if (isTouchDevice()) {
+            // Reduce Matrix effects for better mobile performance
+            document.body.classList.add('touch-device');
+            
+            // Optimize scroll performance
+            let ticking = false;
+            
+            function updateScrollEffects() {
+                // Throttled scroll handling for mobile
+                requestAnimationFrame(() => {
+                    ticking = false;
+                });
+            }
+            
+            function onScroll() {
+                if (!ticking) {
+                    updateScrollEffects();
+                    ticking = true;
+                }
+            }
+            
+            window.addEventListener('scroll', onScroll, { passive: true });
+        }
+        
+        // Orientation change handling
+        window.addEventListener('orientationchange', function() {
+            setTimeout(() => {
+                // Recalculate dimensions after orientation change
+                window.scrollTo(0, window.scrollY);
+            }, 500);
         });
 
         // Matrix rain effect enhancement
@@ -923,16 +970,11 @@
             initScrollAnimations();
             initCleanProgressBars();
             initTypingAnimations();
-            initMatrixDecoding(); // Add matrix decoding effect
-            initEnhancedEffects();
+            initMatrixDecoding();
+            addMatrixConsoleEffect();
+            createEnhancedParticles();
             createMatrixRain();
-            
-            // Typing animation for main title
-            if (document.querySelector('.hero h1')) {
-                typeWriter(document.querySelector('.hero h1'), document.querySelector('.hero h1').textContent, 100);
-            }
         });
     </script>
 </body>
 </html>
-
