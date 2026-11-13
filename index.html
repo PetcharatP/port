@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Multi-cursor intro: ซ่อน hero ไว้ก่อนวาดหน้าแรก (ถ้าผู้ใช้ปิด animation จะข้ามไป) -->
+    <script>
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.documentElement.classList.add('assembling');
+            // กันพลาด: ถ้า assemble.js ไม่ทำงาน ให้แสดงหน้าเว็บตามปกติใน 10 วินาที
+            window.__asmFailsafe = setTimeout(function () {
+                document.documentElement.classList.remove('assembling');
+            }, 10000);
+        }
+    </script>
+    <link rel="stylesheet" href="assemble.css">
 </head>
 <body>
     <!-- Advanced Matrix Background Effects (TikTok Style) -->
@@ -1019,6 +1030,7 @@
             createMatrixRain();
         });
     </script>
+    <script src="assemble.js"></script>
 </body>
 </html>
 
